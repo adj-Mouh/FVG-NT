@@ -82,44 +82,6 @@ namespace NinjaTrader.NinjaScript.Indicators.RajIndicators
             }
         }
 
-        public class Fvg
-        {
-            public int left;
-            public double top;
-            public int right;
-            public double bottom;
-            
-            public List<Labels> labels;
-            public int x_val;
-
-            public Fvg(int _left)
-            {
-                left = _left;
-            }
-
-            public Fvg(int _left, double _top, int _right, double _bottom)
-            {
-                left = _left;
-                top = _top;
-                right = _right;
-                bottom = _bottom;
-            }
-        }
-
-        public struct Labels
-        {
-            public int x;
-            public double y;
-            public int direction;
-
-            public Labels(int _x = 0, double _y = 0.0, int _direction = 0)
-            {
-                x = _x;
-                y = _y;
-                direction = _direction;
-            }
-        }
-
         #region Properties
         [NinjaScriptProperty]
         [Display(Name = "TF_Type", Order = 1, GroupName = "Parameters")]
